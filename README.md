@@ -18,7 +18,7 @@ A static, responsive profile page inspired by modern social media platforms like
 ---
 
 ## 📁 Folder Structure
-
+<pre>
 project-root/
 │
 ├── index.html # Main HTML file
@@ -33,3 +33,4 @@ project-root/
 │ ├── hulk.png
 │ └── loki.png
 └── README.md # Project documentation
+</pre>
