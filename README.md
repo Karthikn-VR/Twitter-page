@@ -21,9 +21,9 @@ A static, responsive profile page inspired by modern social media platforms like
 <pre>
 project-root/
 │
-├── index.html # Main HTML file
-├── 01-proj.css # Custom CSS styles
-├── /imgs/ # Images (profile, banner, etc.)
+├── index.html
+├── styles.css
+├── /imgs/ 
 │ ├── twitter.png
 │ ├── banner.png
 │ ├── profile.png
@@ -32,5 +32,5 @@ project-root/
 │ ├── thor.png
 │ ├── hulk.png
 │ └── loki.png
-└── README.md # Project documentation
+└── README.md
 </pre>
