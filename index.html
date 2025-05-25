@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-op">
+                <li><i class="fas fa-home"></i> Home</li>
+                <li><i class="fa-solid fa-message"></i> Notifications <i class="fa-solid fa-2"></i></li>
+                <li><i class="fas fa-compass"></i> Discover</li>
+                <li><i class="fas fa-user"></i> Me</li>
+            </ul>
+            <img class="twitter" src="./imgs/twitter.png" alt="Twitter logo">
+            <div>
+                <input id="input" type="text" placeholder="Search">
+                <i class="fas fa-search"></i>
+                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-3"></i>
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-regular fa-pen-to-square"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <img class="banner-img" src="./imgs/banner.png" alt="Banner">
+    </div>
+    <div class="color">
+        <button class="edit-btn">Edit profile</button>
+    </div>
+    <section class="content">
+        <div class="profile-div">
+            <img class="profile" src="./imgs/profile.png" alt="Profile">
+            <div class="about">
+                <h3>Karthikeyan VR</h3>
+                <p>@Karthikn_vr</p>
+                <div class="bio">
+                    <p>Engineering Student... Loves to Code...</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chennai<br>
+                       <i class="fas fa-clock"></i> Joined June 2004</p>
+                </div>
+            </div>
+            <p class="photos-videos"><i class="fas fa-camera"></i> 5 photos and videos</p>
+            <div class="gallery">
+                <img src="./imgs/cap.png" alt="Captain America">
+                <img src="./imgs/iron.png" alt="Iron Man">
+                <img src="./imgs/thor.png" alt="Thor">
+                <img src="./imgs/hulk.png" alt="Hulk">
+                <img src="./imgs/loki.png" alt="Loki">
+            </div>
+        </div>
+        <div class="posts">
+            <nav class="post-nav">
+                <div onclick="Posts()" id="post-under">
+                    <p>Posts</p>
+                    <p class="count">120</p>
+                </div>
+                <div onclick="Photos()" id="post-under">
+                    <p>Photos & Videos</p>
+                    <p class="count">85</p>
+                </div>
+                <div onclick="Following()" id="post-under">
+                    <p>Following</p>
+                    <p class="count">200</p>
+                </div>
+                <div onclick="Followers()" id="post-under">
+                    <p>Followers</p>
+                    <p class="count">1800</p>
+                </div>
+                <div onclick="Favorites()" id="post-under">
+                    <p>Favorites</p>
+                    <p class="count">65</p>
+                </div>
+                <div>
+                    <p>More <select id="sle">
+                        <option value=""></option>
+                        <option value="tweets">Tweets</option>
+                        <option value="followers">Followers</option>
+                        <option value="following">Following</option>
+                        <option value="likes">Likes</option>
+                        <option value="retweets">Retweets</option>
+                        <option value="mentions">Mentions</option>
+                    </select></p>
+                </div>
+            </nav>
+            <div class="post-container">
+            <div class="post-tabs">
+                <p>Tweets</p>
+                <p>Tweets/Replies</p>
+            </div>
+            
+                <div class="post">
+                    <p><img class="post-prof" src="./imgs/profile.png" alt="Profile"><strong>Karthi</strong> @kk_vr · 2h</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem dolorum, voluptates, veniam maiores repudiandae nobis.</p>
+                    <div class="post-actions">
+                        <i id="thumps-up1" class="fa fa-thumbs-up"></i>
+                        <i id="down1" class="fa fa-thumbs-down"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <p><img class="post-prof" src="./imgs/profile.png" alt="Profile"><strong>John</strong> @mr_wick · 5h</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem dolorum, voluptates, veniam maiores repudiandae nobis, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, dicta.</p>
+                    <div class="post-actions">
+                        <i id="thumps-up2" class="fa fa-thumbs-up"></i>
+                        <i id="down2" class="fa fa-thumbs-down"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <p><img class="post-prof" src="./imgs/profile.png" alt="Profile"><strong>Spider-man</strong> @ss-17 · 11h</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi omnis explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae voluptatum itaque labore!</p>
+                    <div class="post-actions">
+                        <i id="thumps-up3" class="fa fa-thumbs-up"></i>
+                        <i id="down3" class="fa fa-thumbs-down"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <p><img class="post-prof" src="./imgs/profile.png" alt="Profile"><strong>Hulk</strong> @hlk-89 · 1d</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos earum id molestiae, deleniti quaerat consequuntur debitis odio iste aperiam possimus officiis voluptatum reiciendis.</p>
+                    <div class="post-actions">
+                        <i id="thumps-up4" class="fa fa-thumbs-up"></i>
+                        <i id="down4" class="fa fa-thumbs-down"></i>
+                    </div>
+                </div>
+                <div class="post">
+                    <p><img class="post-prof" src="./imgs/profile.png" alt="Profile"><strong>Logan</strong> @ww_23 · 4d</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit similique dignissimos quaerat, excepturi, corrupti qui sed consectetur quam repellendus soluta harum molestiae ab placeat.</p>
+                    <div class="post-actions">
+                        <i id="thumps-up5" class="fa fa-thumbs-up"></i>
+                        <i id="down5" class="fa fa-thumbs-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-list">
+            <p>People you may know</p>
+            <div class="user">
+                <img class="user-prof" src="./imgs/profile.png" alt="Profile"><p>America</p>
+                <button id="follow1" class="follow-btn">Follow</button>
+                <i class="fas fa-times remove-icon"></i>
+            </div>
+            <div class="user">
+                <img class="user-prof" src="./imgs/profile.png" alt="Profile"><p>IronMan</p>
+                <button id="follow2" class="follow-btn">Follow</button>
+                <i class="fas fa-times remove-icon"></i>
+            </div>
+            <div class="user">
+                <img class="user-prof" src="./imgs/profile.png" alt="Profile"><p>Spiders</p>
+                <button id="follow3" class="follow-btn">Follow</button>
+                <i class="fas fa-times remove-icon"></i>
+            </div>
+            <div class="user">
+                <img class="user-prof" src="./imgs/profile.png" alt="Profile"><p>Hunters</p>
+                <button id="follow4" class="follow-btn">Follow</button>
+                <i class="fas fa-times remove-icon"></i>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
